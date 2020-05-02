@@ -45,6 +45,7 @@
   box-shadow: none;
   border: 6px solid var(--secondary);
   padding: .5rem 1rem;
+  z-index: 0;
 }
 
 #desktop-header-search-bar button {
@@ -252,13 +253,24 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
 }
 
 
+/* Megamenu */
 
+.cbp-hrmenu .cbp-hrsub-inner > .row:last-child, .cbp-hrmenu .cbp-hrsub-inner .iqitmegamenu-submenu-container > .row:last-child{
+padding-left: 60px;
+padding-right: 60px;
+}
 
 
 
 /* Search full screen*/
 
+.search-widget .search-btn{
+  z-index: 0;
+}
 
+#desktop-header-search-bar {
+    z-index: 1;
+}
 
 #header-search-btn .fullscreen-search #fullscreen-search-backdrop {
     z-index: 1;
@@ -270,7 +282,20 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
     background: blueviolet;
     opacity: 10%;
 }
+#contain-mandat{
+  display: flex;
+  margin-bottom: 10px;
+}
 
+.mandat {
+  color:#000;
+  font-size:90%;
+  font-weight: 400;
+  padding-left: 10px;
+  line-height: normal;
+  vertical-align: middle;
+
+}
 
 /* AVis verifies */
 
@@ -280,6 +305,14 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
 
 @media (max-width: 1400px) {
   #avis-verifies  {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1000px) {
+  #desktop-header-search-bar  {
     display: none;
   }
 
