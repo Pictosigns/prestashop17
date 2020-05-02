@@ -278,7 +278,7 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
   float: right;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #avis-verifies  {
     display: none;
   }
