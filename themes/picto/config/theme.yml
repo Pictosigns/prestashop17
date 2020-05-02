@@ -1,0 +1,22 @@
+parent: warehouse
+name: picto
+display_name: Warehouse child theme
+version: 1.0
+author:
+  name: "Picto"
+assets:
+  use_parent_assets: true
+  js:
+    all:
+      - id: custom
+        path: assets/js/custom.js
+        priority: 200
+  css:
+    all:
+      - id: font-awesome
+        path: assets/css/font-awesome/css/font-awesome.css
+        media: all
+        priority: 200
+      - id: custom
+        path: assets/css/custom.css
+        priority: 200

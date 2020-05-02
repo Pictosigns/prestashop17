@@ -176,7 +176,7 @@ body#checkout section.checkout-step.-current .step-title {
 
   background-color: white;
   padding: 0 5% 0 5%;
-  box-shadow: 2px 0px 11px 0px #dbdbdb;
+
 }
 
 
@@ -269,4 +269,18 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
     height: 100%;
     background: blueviolet;
     opacity: 10%;
+}
+
+
+/* AVis verifies */
+
+#avis-verifies  {
+  float: right;
+}
+
+@media (max-width: 1200px) {
+  #avis-verifies  {
+    display: none;
+  }
+
 }
