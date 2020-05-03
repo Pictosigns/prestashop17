@@ -1,4 +1,4 @@
-/*  CONFIG HEADER MENU test 2 */
+/* --------------------------------- CONFIG HEADER MENU --------------------------------- */
 
 .header-top {
     padding-top: 0px;
@@ -77,10 +77,19 @@
     padding-top: 10px;
 }
 
+#header-user-btn{
+  color: grey;
+}
+
+@media (max-width: 1000px) {
+  #desktop-header-search-bar  {
+    display: none;
+  }
+}
 
 
 
- /* CONFIG PANIER  */
+/* --------------------------------- CONFIG PANIER  --------------------------------- */
 
 
  .ps-shoppingcart .cart-products-count-btn {
@@ -121,10 +130,132 @@
   vertical-align: middle;
 }
 
+/* ---------------------------------  Custom Footer Liens --------------------------------- */
 
 
+#linkfooter-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/*Custom Checkout */
+.link-footer{
+  max-width: auto;
+  height: 4em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.link-footer a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
+   color: #fff;
+   float: left;
+    font-weight: 400;
+
+ }
+
+/* ---------------------------------  Custom Footer informations --------------------------------- */
+ #footer-container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content:space-around;
+   min-height: 300px;
+   color:white;
+ }
+
+ @media (max-width: 1000px) {
+   #footer-container  {
+     flex-direction: column;
+   }
+    .blockinfo {
+        margin-bottom: 40px;
+    }
+
+
+ }
+
+ .block-content ul{
+   display: flex;
+ }
+
+ .block-content ul li {
+   padding-left: 3em;
+ }
+
+ .blockinfo {
+   width: auto;
+ }
+
+.txtfooter{
+  color:#949494;
+}
+
+.titlefooter{
+  font-weight: 800;
+  font-size: 2em;
+  line-height: 1.5em;
+}
+.titlefooter-small{
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.titlefooter-big{
+  font-weight: 600;
+  font-size: 2.8em;
+  line-height: 1.5em;
+  color: #fc0f47;
+}
+
+.flexinfo{
+    display: flex;
+    flex-direction: row;
+}
+
+ .blockinfo  a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
+   color: white;
+   font-weight: 700;
+ }
+
+ .blockinfo  a:hover:not(.nav-link):not(.btn){
+  color: grey;
+  font-weight: 700;
+ }
+
+
+#footer-paiement{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-paiement-space{
+  padding-left: 1em;
+  color: #949494;
+}
+
+#footermarque{
+  text-align: center;
+  color: grey;
+  font-size: 0.8em;
+  font-weight:bolder;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+ #footermarque #footermarque-color{
+  color: #fc0f47
+}
+
+@media (max-width: 800px) {
+  #footer-paiement{
+  flex-wrap: wrap;
+  }
+  }
+/* --------------------------------- Custom Checkout --------------------------------- */
 
 
 body#checkout section.checkout-step.-current {
@@ -241,7 +372,7 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
 }
 
 
-/*Custom Acccount */
+/* --------------------------------- Custom Acccount --------------------------------- */
 
 
 .my-account-page-content-wrapper {
@@ -262,7 +393,7 @@ padding-right: 60px;
 
 
 
-/* Search full screen*/
+/* --------------------------------- Search full screen --------------------------------- */
 
 .search-widget .search-btn{
   z-index: 0;
@@ -297,7 +428,7 @@ padding-right: 60px;
 
 }
 
-/* AVis verifies */
+/* --------------------------------- Avis verifies --------------------------------- */
 
 #avis-verifies  {
   float: right;
@@ -305,14 +436,6 @@ padding-right: 60px;
 
 @media (max-width: 1400px) {
   #avis-verifies  {
-    display: none;
-  }
-
-}
-
-
-@media (max-width: 1000px) {
-  #desktop-header-search-bar  {
     display: none;
   }
 
