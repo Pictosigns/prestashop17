@@ -72,13 +72,14 @@
             <h2 id="js-product-list-header" class="h1 page-title"><span>{$listing.label}</span></h2>
         {/block}
         <section id="products">
+
             {if $listing.products|count}
                 {block name='product_list_active_filters'}
                     <div id="">
                         {$listing.rendered_active_filters nofilter}
                     </div>
                 {/block}
-                
+
                 {if $iqitTheme.pl_faceted_position}
                     {block name='product_list_facets_center'}
                         <div id="facets_search_center">

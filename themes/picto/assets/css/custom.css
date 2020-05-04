@@ -77,16 +77,21 @@
     padding-top: 10px;
 }
 
-#header-user-btn{
-  color: grey;
+.fa-user:before{
+  color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   #desktop-header-search-bar  {
     display: none;
   }
+  .fa-user:before{
+    color: white;
+  }
 }
 
+
+/* --------------------------------- CONFIG PRODUIT  --------------------------------- */
 
 
 /* --------------------------------- CONFIG PANIER  --------------------------------- */
@@ -137,6 +142,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .link-footer{
@@ -144,15 +150,11 @@
   height: 4em;
   padding-top: 20px;
   padding-bottom: 20px;
+
 }
 
 
-.link-footer a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
-   color: #fff;
-   float: left;
-    font-weight: 400;
 
- }
 
 /* ---------------------------------  Custom Footer informations --------------------------------- */
  #footer-container{
@@ -162,17 +164,35 @@
    justify-content:space-around;
    min-height: 300px;
    color:white;
+
  }
 
- @media (max-width: 1000px) {
+ @media (max-width: 992px) {
    #footer-container  {
      flex-direction: column;
+     padding-top: 20px;
    }
     .blockinfo {
         margin-bottom: 40px;
+        width: auto;
+      }
+
+    .link-footer{
+      display: none;
     }
 
+    #traitfooter{
+      display: none;
+    }
 
+    #traitfooter{
+      display: none;
+    }
+ }
+
+
+ #traitfooter{
+   color: grey;
  }
 
  .block-content ul{
@@ -183,9 +203,6 @@
    padding-left: 3em;
  }
 
- .blockinfo {
-   width: auto;
- }
 
 .txtfooter{
   color:#949494;
@@ -214,15 +231,7 @@
     flex-direction: row;
 }
 
- .blockinfo  a:link:not(.nav-link):not(.btn), a:visited:not(.nav-link):not(.btn){
-   color: white;
-   font-weight: 700;
- }
 
- .blockinfo  a:hover:not(.nav-link):not(.btn){
-  color: grey;
-  font-weight: 700;
- }
 
 
 #footer-paiement{
@@ -250,11 +259,29 @@
   color: #fc0f47
 }
 
+
+.block-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu{
+  padding-left: 3em;
+}
+
+
+
 @media (max-width: 800px) {
   #footer-paiement{
   flex-wrap: wrap;
   }
   }
+
+
+
+
+
 /* --------------------------------- Custom Checkout --------------------------------- */
 
 

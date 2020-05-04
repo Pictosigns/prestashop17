@@ -42,7 +42,7 @@
 </div>
 {/if}
 
-<div class="footer-container footer-style-inline footer-style-4 dropup">
+<div>
   <div id="linkfooter-container" >
     <div class="link-footer">
       {block name='hook_footer'}
@@ -51,7 +51,7 @@
     </div>
 </div>
 
-    <hr style="color:grey;">
+    <hr id="traitfooter">
 <div id=footer-container>
   <div class="blockinfo"><texte class="titlefooter-small">{l s='Ouvert' d='Shop.Theme.Catalog'}<br>{l s='de 8h à 12h' d='Shop.Theme.Catalog'}<br>{l s='& de 14h à 18h' d='Shop.Theme.Catalog'}</texte><br><texte class="txtfooter">{l s='Du lundi au vendredi' d='Shop.Theme.Catalog'}</texte></div>
   <div class="blockinfo">
@@ -61,7 +61,7 @@
     </div>
   </div>
   <div class="blockinfo">
-    <a href="/content/12-contactez-nous" title="Contactez-nous">
+    <a href="{$urls.base_url}content/12-contactez-nous" title="Contactez-nous" style="color:white;">
       <div id="chatfooter">Mail/tchat<img alt="chat" src="{$urls.base_url}/themes/picto/assets/img/question.svg" style="height:3em; padding-left:10px;"/></div>
     </a>
       <div><texte class="txtfooter">1 Place Léon Perrod <br>78170 La Celle Saint Cloud<br>France</texte></div>

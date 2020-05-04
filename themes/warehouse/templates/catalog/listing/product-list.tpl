@@ -93,7 +93,7 @@
                 <div id="">
                     {block name='product_list'}
                         <div id="facets-loader-icon"><i class="fa fa-circle-o-notch fa-spin"></i></div>
-                        {include file='catalog/_partials/products.tpl' listing=$listing}
+                        {include file='catalog/_partials/products.tpl' listing=$listing}    
                     {/block}
                 </div>
                 <div id="infinity-loader-icon"><i class="fa fa-circle-o-notch fa-spin"></i></div>
