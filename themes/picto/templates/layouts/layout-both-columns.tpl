@@ -47,13 +47,16 @@
         {block name='header'}
             {include file='_partials/header.tpl'}
         {/block}
+
     </header>
-    <div id="avis-verifies""><img src="//cl.avis-verifies.com/fr/cache/2/d/0/2d07ae1e-31d5-4984-1dad-bf97a4941375/widget3/widget03-12072.png" alt="WidgetAvisVerifies"   width="165"></div>
+
+<div class="avisverifies"><img src="//cl.avis-verifies.com/fr/cache/2/d/0/2d07ae1e-31d5-4984-1dad-bf97a4941375/widget3/widget03-12072.png" alt="WidgetAvisVerifies"   width="165" style="float:right;"></div>
 
     <section id="wrapper">
         {hook h="displayWrapperTop"}
 
         {include file='_partials/breadcrumb.tpl'}
+
 
         <div id="inner-wrapper" class="container">
             {hook h="displayWrapperTopInContainer"}

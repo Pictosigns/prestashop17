@@ -52,6 +52,7 @@
   background: var(--secondary);
   font-size: 24px;
   padding: 0 15px;
+  z-index: 0;
 }
 
 #desktop-header-search-bar form {
@@ -79,6 +80,17 @@
 
 .fa-user:before{
   color: black;
+}
+
+#header .header-btn-w .header-btn .title{
+
+padding: 0;
+margin: 0;
+font-size: 12px;
+
+}
+#devislabel{
+vertical-align: text-top;
 }
 
 @media (max-width: 992px) {
@@ -133,8 +145,21 @@
   text-align: center;
 }
 
-.cbp-hrmenu .cbp-products-big *{
+.nav-link{
+  padding: 0px;
+  width: 120px;
+  text-align: center;
+}
 
+.cbp-hrmenu .cbp-hrsub-inner, .cbp-hrmenu ul.cbp-hrsub-level2{
+
+  border-bottom: solid 5px #fc0f47;
+  border-top: solid 5px #fc0f47;
+}
+
+.cbp-hrmenu .cbp-hrsub{
+
+z-index: 1;
 }
 
 @media (max-width: 1410px) {
@@ -142,11 +167,20 @@
 
   margin-left: 20px;
 }
+.col-header-left{
+  width: 250px;
 }
-@media (max-width: 1225px) {
+
+#desktop_logo{
+  width: 100%;
+  padding-left: 10px;
+}
+}
+
+@media (max-width: 1230px) {
 .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > a:not([href]):not([tabindex]), .cbp-horizontal > ul > li > .cbp-main-link{
 
-  font-size: 8px;
+  font-size: 9px;
   margin-left: 0px;
   padding-left:0px;
 }
@@ -156,16 +190,32 @@
 }
 
 .col-header-left{
-  width: 180px;
+  width: 220px;
 }
 
 #desktop_logo{
   width: 100%;
   padding-left: 10px;
 }
+.quotation{
+  display: none;
 }
-/* --------------------------------- CONFIG PRODUIT  --------------------------------- */
 
+}
+
+@media (max-width: 960px) {
+  .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > a:not([href]):not([tabindex]), .cbp-horizontal > ul > li > .cbp-main-link{
+
+    font-size: 6px;
+    margin-left: 0px;
+    padding-left:0px;
+  }
+  .quotation{
+    display: none;
+  }
+
+}
+/* --------------------------------- CONFIG ADD PRODUCT BASKET  --------------------------------- */
 
 
 
@@ -189,12 +239,12 @@
 .quotation {
   width: 65px;
   padding: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   border: none;
   cursor: pointer;
   background: #01164a;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   text-align: center;
 
 }
@@ -480,6 +530,12 @@ body#checkout section.checkout-step .payment-options .payment-option{
     padding-left: 1em;
 }
 
+@media (max-width: 1250px) {
+
+  body#checkout section.checkout-step.-current{
+
+    margin-left: 15px;
+  }
 
 /* --------------------------------- Custom Acccount --------------------------------- */
 
@@ -504,9 +560,7 @@ padding-right: 60px;
 
 /* --------------------------------- Search full screen --------------------------------- */
 
-.search-widget .search-btn{
-  z-index: 0;
-}
+
 
 #desktop-header-search-bar {
     z-index: 1;
@@ -539,12 +593,9 @@ padding-right: 60px;
 
 /* --------------------------------- Avis verifies --------------------------------- */
 
-#avis-verifies  {
-  float: right;
-}
 
 @media (max-width: 1400px) {
-  #avis-verifies  {
+  .avisverifies  {
     display: none;
   }
 

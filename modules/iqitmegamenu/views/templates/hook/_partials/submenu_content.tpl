@@ -133,7 +133,7 @@
                 {elseif $node.contentType==6}
 
                     {if isset($node.content.source)}
-                        {if isset($node.content.href)}<a href="{$node.content.href}">{/if}
+                        {if isset($node.content.href)}<a href="{$urls.base_url}{$node.content.href}">{/if}
                         <img src="{$node.content.source}" class="img-fluid cbp-banner-image"
                              {if isset($node.content.alt)}alt="{$node.content.alt}"{/if}
                                 {if isset($node.content.size)} width="{$node.content.size.w}" height="{$node.content.size.h}"{/if} />

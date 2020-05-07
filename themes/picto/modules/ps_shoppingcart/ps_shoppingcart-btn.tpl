@@ -4,5 +4,5 @@
   </div>
 </div>
 <a href="{$urls.base_url}panier?action=show" class="quotation" style="color:white;">
-  <img src="{$urls.img_url}quotation.svg" alt="">Devis
+  <img src="{$urls.img_url}quotation.svg" alt=""><texte id="devislabel">Devis</text>
 </a>

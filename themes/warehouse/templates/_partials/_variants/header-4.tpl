@@ -89,6 +89,7 @@
                         {/widget_block}
                         {hook h="litespeedEsiEnd"}
                     {/if}
+
                 </div>
                 {hook h='displayHeaderRight'}
             </div>
@@ -101,4 +102,3 @@
     </div>
 </div>
 {hook h='displayNavFullWidth'}
-
