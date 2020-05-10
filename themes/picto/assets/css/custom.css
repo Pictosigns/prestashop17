@@ -33,8 +33,10 @@
 }
 
 #desktop-header:not(.stuck-header) #header-search-btn {
-  display: none;
+  visibility: hidden;
 }
+
+
 
 #desktop-header-search-bar {
   background: #fc0f47;
@@ -155,6 +157,8 @@ vertical-align: text-top;
 
   border-bottom: solid 5px #fc0f47;
   border-top: solid 5px #fc0f47;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .cbp-hrmenu .cbp-hrsub{
@@ -162,7 +166,7 @@ vertical-align: text-top;
 z-index: 1;
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1471px) {
 .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > a:not([href]):not([tabindex]), .cbp-horizontal > ul > li > .cbp-main-link{
 
   margin-left: 20px;
@@ -177,7 +181,7 @@ z-index: 1;
 }
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1291px) {
 .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > a:not([href]):not([tabindex]), .cbp-horizontal > ul > li > .cbp-main-link{
 
   font-size: 9px;
@@ -185,12 +189,29 @@ z-index: 1;
   padding-left:0px;
 }
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto, .col-xs-12{
-  padding-left:0;
+
+justify-content:center;
 
 }
 
 .col-header-left{
   width: 220px;
+}
+
+.product-cover img {
+  max-height: 300px;
+}
+
+img, svg{
+  width: auto;
+}
+
+.crossselling-products {
+  display: none;
+}
+
+.clearfix {
+  display: grid;
 }
 
 #desktop_logo{
@@ -203,7 +224,7 @@ z-index: 1;
 
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1066px) {
   .cbp-horizontal > ul > li > a, .cbp-horizontal > ul > li > a:not([href]):not([tabindex]), .cbp-horizontal > ul > li > .cbp-main-link{
 
     font-size: 6px;
@@ -214,10 +235,31 @@ z-index: 1;
     display: none;
   }
 
+  .col-header-left{
+    width: 150px;
+  }
+
+  #desktop_logo{
+    width: 100%;
+    padding-left: 10px;
+  }
+  .quotation{
+    display: none;
+  }
+
+  #header-user-btn{
+  display: none;
+  }
+
+
+
 }
-/* --------------------------------- CONFIG ADD PRODUCT BASKET  --------------------------------- */
+/* --------------------------------- CATEGORY --------------------------------- */
+.products-grid .product-miniature-layout-1 .product-description {
 
+flex-direction: column-reverse;
 
+}
 
 /* --------------------------------- CONFIG PANIER  --------------------------------- */
 
@@ -530,12 +572,6 @@ body#checkout section.checkout-step .payment-options .payment-option{
     padding-left: 1em;
 }
 
-@media (max-width: 1250px) {
-
-  body#checkout section.checkout-step.-current{
-
-    margin-left: 15px;
-  }
 
 /* --------------------------------- Custom Acccount --------------------------------- */
 
@@ -576,9 +612,11 @@ padding-right: 60px;
     background: blueviolet;
     opacity: 10%;
 }
-#contain-mandat{
+
+#contain-mandat {
   display: flex;
   margin-bottom: 10px;
+
 }
 
 .mandat {
@@ -599,4 +637,17 @@ padding-right: 60px;
     display: none;
   }
 
+}
+
+/* Module cookielaw */
+
+#iqitcookielaw {
+display: flex;
+height: 90px;
+}
+#iqitcookielaw-accept{
+margin-left: 10px;
+}
+.p-3 {
+  padding: 5px;
 }
