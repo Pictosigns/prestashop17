@@ -210,9 +210,6 @@ img, svg{
   display: none;
 }
 
-.clearfix {
-  display: grid;
-}
 
 #desktop_logo{
   width: 100%;
@@ -250,6 +247,8 @@ img, svg{
   #header-user-btn{
   display: none;
   }
+
+
 
 
 
@@ -567,7 +566,6 @@ a.differentadress:hover:not(.nav-link):not(.btn) {
 
 body#checkout section.checkout-step .payment-options .payment-option{
     background: aliceblue;
-    height:3em;
     padding-top:0.8em;
     padding-left: 1em;
 }
@@ -651,3 +649,17 @@ margin-left: 10px;
 .p-3 {
   padding: 5px;
 }
+
+
+/* -------------------------- Paiement Bancaire ----------------------------
+
+#zoid-payments-sdk-contingency-handler-3aa205c446_mdq6mzm6ntu.payments-sdk-contingency-handler-context-iframe .outlet {
+
+width: 60%;
+height: 70%;
+}
+
+.xo-3ds-iframe {
+height:800px;
+}
+*/
