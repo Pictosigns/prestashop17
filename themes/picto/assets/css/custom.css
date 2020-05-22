@@ -248,11 +248,10 @@ img, svg{
   display: none;
   }
 
-
-
-
-
 }
+
+
+
 /* --------------------------------- CATEGORY --------------------------------- */
 .products-grid .product-miniature-layout-1 .product-description {
 
@@ -569,6 +568,7 @@ body#checkout section.checkout-step .payment-options .payment-option{
     padding-top:0.8em;
     padding-left: 1em;
 }
+
 
 
 /* --------------------------------- Custom Acccount --------------------------------- */
