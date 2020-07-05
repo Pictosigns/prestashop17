@@ -87,13 +87,22 @@
 
 
                 <div>
-                    <span class="current-price"><span itemprop="price" class="product-price" content="{$product.price_amount}">{$product.price}</span></span>
+                  <div>
+                    <span class="current-price"><span itemprop="price" class="product-price">{$product.price_tax_exc|round:2|string_format:"%.2f"} €</span></span>
+                    <div class="tax-shipping-delivery-label text-muted" style="display: inline;">{l s='%price% tax excl.' d='Shop.Theme.Catalog' sprintf=['%price%' => $product.price_tax_exc]}</div>
+                </div>
+
+                    <span class="current-price"><span itemprop="price" class="product-price-tax" content="{$product.price_amount}">{$product.price}</span></span>
                     <div class="tax-shipping-delivery-label text-muted" style="display: inline;">
+
                         {if isset($configuration.taxes_enabled) && !$configuration.taxes_enabled}
                             {l s='No tax' d='Shop.Theme.Catalog'}
                         {elseif $configuration.display_taxes_label}
                             {$product.labels.tax_long}
                         {/if}
+
+
+
                         {hook h='displayProductPriceBlock' product=$product type="price"}
                         {hook h='displayProductPriceBlock' product=$product type="after_price"}
                         {if $product.additional_delivery_times == 1}

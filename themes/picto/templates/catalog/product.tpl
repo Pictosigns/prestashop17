@@ -111,7 +111,7 @@
                         {block name='page_header'}
                         <h1 class="h1 page-title" itemprop="name"><span>{block name='page_title'}{$product.name}{/block}</span></h1>
                     {/block}
-                        
+
 
                         {block name='hook_display_product_rating'}
                             {hook h='displayProductRating' product=$product}

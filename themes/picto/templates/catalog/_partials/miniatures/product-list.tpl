@@ -24,6 +24,7 @@
  *}
 {block name='product_miniature_item'}
     <div class="js-product-miniature-wrapper col-12">
+    
         <article
                 class="product-miniature product-miniature-default product-miniature-list js-product-miniature"
                 data-id-product="{$product.id_product}"

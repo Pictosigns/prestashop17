@@ -250,6 +250,14 @@ img, svg{
 
 }
 
+/* PRODUCT */
+
+.product-price-tax{
+  color: black;
+  font-size: blod;
+  font-weight: 800;
+}
+
 
 
 /* --------------------------------- CATEGORY --------------------------------- */
@@ -259,6 +267,15 @@ flex-direction: column-reverse;
 
 }
 
+.vat-out{
+  font-size: 10px;
+}
+
+.vat-on{
+  font-size: 16px;
+  font-weight: bolder;
+  color: #072d84;
+}
 /* --------------------------------- CONFIG PANIER  --------------------------------- */
 
 
@@ -298,6 +315,10 @@ flex-direction: column-reverse;
   font-weight: 400;
   text-align: center;
   vertical-align: middle;
+}
+
+.dp_input_div{
+  background-color: aliceblue;
 }
 
 /* ---------------------------------  Custom Footer Liens --------------------------------- */
@@ -649,17 +670,9 @@ margin-left: 10px;
 .p-3 {
   padding: 5px;
 }
-
-
-/* -------------------------- Paiement Bancaire ----------------------------
-
-#zoid-payments-sdk-contingency-handler-3aa205c446_mdq6mzm6ntu.payments-sdk-contingency-handler-context-iframe .outlet {
-
-width: 60%;
-height: 70%;
+@media (max-width: 800px) {
+  #iqitcookielaw.iqitcookielaw-showed {
+  display: none;
 }
 
-.xo-3ds-iframe {
-height:800px;
 }
-*/
